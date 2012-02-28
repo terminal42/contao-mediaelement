@@ -1,5 +1,5 @@
 
-<section class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
 <?php if ($this->headline): ?>
 
 <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
@@ -7,20 +7,20 @@
 
 <<?php echo $this->type; ?> id="mejs<?php echo $this->id; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>"<?php if($this->hasPoster): ?> poster="<?php echo $this->poster; ?>"<?php endif; ?> controls="controls" preload="none">
 <?php foreach( $this->files as $file ): ?>
-    <source type="<?php echo $file['type']; ?>" src="<?php echo $file['src']; ?>" />
+    <source type="<?php echo $file['type']; ?>" src="<?php echo $file['src']; ?>">
 <?php endforeach; ?>
 <?php if($this->hasFlash): ?>
     <object width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" type="application/x-shockwave-flash" data="system/modules/mediaelement/html/flashmediaelement.swf">
-        <param name="movie" value="system/modules/mediaelement/html/flashmediaelement.swf" />
-        <param name="flashvars" value="controls=true&amp;file=<?php echo $this->flash; ?>" />
+        <param name="movie" value="system/modules/mediaelement/html/flashmediaelement.swf">
+        <param name="flashvars" value="controls=true&amp;file=<?php echo $this->flash; ?>">
 <?php if($this->hasPoster): ?>
-        <img src="<?php echo $this->poster; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" alt="<?php echo $this->alt; ?>" />
+        <img src="<?php echo $this->poster; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" alt="<?php echo $this->alt; ?>">
 <?php else: ?>
 		<p><?php echo $this->alt; ?></p>
 <?php endif; ?>
     </object>
 <?php elseif($this->hasPoster): ?>
-    <img src="<?php echo $this->poster; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" alt="<?php echo $this->alt; ?>" />
+    <img src="<?php echo $this->poster; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" alt="<?php echo $this->alt; ?>">
 <?php else: ?>
 	<p><?php echo $this->alt; ?></p>
 <?php endif; ?>
@@ -30,4 +30,4 @@ window.addEvent('domready', function() {
 	new MediaElementPlayer('mejs<?php echo $this->id; ?>');
 });
 </script>
-</section>
+</div>
