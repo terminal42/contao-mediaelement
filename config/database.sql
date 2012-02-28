@@ -12,6 +12,6 @@
 -- 
 
 CREATE TABLE `tl_content` (
-  `me_size` varchar(255) NOT NULL default '',
+  `mejs_size` varchar(255) NOT NULL default '',
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

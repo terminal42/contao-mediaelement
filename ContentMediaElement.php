@@ -92,7 +92,7 @@ class ContentMediaElement extends ContentElement
 	
 	protected function compile()
 	{
-		$arrSize = deserialize($this->me_size, true);
+		$arrSize = deserialize($this->mejs_size, true);
 		
 		$arrFiles = array();
 		$strFlash = null;

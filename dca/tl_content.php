@@ -31,16 +31,16 @@
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_content']['palettes']['mediaelement_video'] = '{type_legend},type,headline;{source_legend},multiSRC;{image_legend},alt,me_size;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
-$GLOBALS['TL_DCA']['tl_content']['palettes']['mediaelement_audio'] = '{type_legend},type,headline;{source_legend},multiSRC;{image_legend},alt,me_size;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['mediaelement_video'] = '{type_legend},type,headline;{source_legend},multiSRC;{image_legend},alt,mejs_size;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['mediaelement_audio'] = '{type_legend},type,headline;{source_legend},multiSRC;{image_legend},alt,mejs_size;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 
 /**
  * Fields
  */
-$GLOBALS['TL_DCA']['tl_content']['fields']['me_size'] = array
+$GLOBALS['TL_DCA']['tl_content']['fields']['mejs_size'] = array
 (
-	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['me_size'],
+	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['mejs_size'],
 	'exclude'		=> true,
 	'inputType'		=> 'text',
 	'eval'			=> array('mandatory'=>true, 'multiple'=>true, 'size'=>2, 'maxlength'=>10),
