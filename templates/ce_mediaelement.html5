@@ -10,9 +10,9 @@
     <source type="<?php echo $file['type']; ?>" src="<?php echo $file['src']; ?>" />
 <?php endforeach; ?>
 <?php if($this->hasFlash): ?>
-    <object width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" type="application/x-shockwave-flash" data="/system/modules/mediaelement/html/flashmediaelement.swf">
-        <param name="movie" value="/system/modules/mediaelement/html/flashmediaelement.swf" />
-        <param name="flashvars" value="controls=true&amp;file=/contao-latest/tl_files/video-demo/oceans-clip.mp4" />
+    <object width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" type="application/x-shockwave-flash" data="system/modules/mediaelement/html/flashmediaelement.swf">
+        <param name="movie" value="system/modules/mediaelement/html/flashmediaelement.swf" />
+        <param name="flashvars" value="controls=true&amp;file=<?php echo $this->flash; ?>" />
 <?php if($this->hasPoster): ?>
         <img src="<?php echo $this->poster; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" alt="<?php echo $this->alt; ?>" />
 <?php else: ?>
