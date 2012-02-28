@@ -32,5 +32,6 @@
  * Content elements
  */
 $GLOBALS['TL_CTE']['files']['mediaelement_video'] = 'ContentMediaElement';
+$GLOBALS['TL_CTE']['files']['mediaelement_youtube'] = 'ContentMediaElementYouTube';
 $GLOBALS['TL_CTE']['files']['mediaelement_audio'] = 'ContentMediaElement';
 

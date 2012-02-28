@@ -32,5 +32,6 @@
  * Content elements
  */
 $GLOBALS['TL_LANG']['CTE']['mediaelement_video'] = array('Video Player', 'Play video files using latest techniques (HTML5) with automatic fallback (Flash/Silverlight) for older browsers. Select any appropriate file (eg. .mp4, .ogg, .webm, image) and the element will automatically figure out what can be used.');
+$GLOBALS['TL_LANG']['CTE']['mediaelement_youtube'] = array('YouTube Video', 'Play youtube video files using latest techniques (HTML5) with automatic fallback (Flash/Silverlight) for older browsers.');
 $GLOBALS['TL_LANG']['CTE']['mediaelement_audio'] = array('Audio Player', 'Play video files using latest techniques (HTML5) with automatic fallback (Flash/Silverlight) for older browsers. Select any appropriate file (eg. .mp3) and the element will automatically figure out what can be used.');
 

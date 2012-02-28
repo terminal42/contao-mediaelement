@@ -32,4 +32,5 @@
  * Fields
  */
 $GLOBALS['TL_LANG']['tl_content']['mejs_size'] = array('Player-Grösse', 'Bitte geben Sie die Breite und Höhe des Audio- oder Video-Players ein.');
+$GLOBALS['TL_LANG']['tl_content']['mejs_youtube'] = array('YouTube ID', 'Geben Sie die ID des YouTube-Videos ein. Sie finden diesen in einer normalen YouTube-URL als Parameter v=xxx');
 
