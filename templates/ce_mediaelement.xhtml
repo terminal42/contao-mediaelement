@@ -20,7 +20,7 @@
 <?php elseif($this->hasPoster): ?>
     <img src="<?php echo $this->poster; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>" alt="<?php echo $this->alt; ?>" />
 <?php endif; ?>
-</video>
+</<?php echo $this->type; ?>>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 window.addEvent('domready', function() {
