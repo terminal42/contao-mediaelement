@@ -23,9 +23,11 @@
 </video>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
+var mejs<?php echo $this->id; ?>_player;
 window.addEvent('domready', function() {
-	new MediaElementPlayer('mejs<?php echo $this->id; ?>');
+    mejs<?php echo $this->id; ?>_player = new MediaElementPlayer('mejs<?php echo $this->id; ?>', {pluginPath:'/system/modules/mediaelement/html/'});
 });
+
 //--><!]]>
 </script>
 </div>
