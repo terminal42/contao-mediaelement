@@ -24,10 +24,10 @@
 <?php else: ?>
 	<p><?php echo $this->alt; ?></p>
 <?php endif; ?>
-</video>
+</<?php echo $this->type; ?>>
 <script type="text/javascript">
 window.addEvent('domready', function() {
-	new MediaElementPlayer('mejs<?php echo $this->id; ?>');
+    new MediaElementPlayer('mejs<?php echo $this->id; ?>', {pluginPath:'system/modules/mediaelement/html/'});
 });
 </script>
 </div>
