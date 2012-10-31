@@ -80,8 +80,8 @@ class ContentMediaElement extends ContentElement
 			return $objTemplate->parse();
 		}
 		
-		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/mediaelement-and-player.js';
-		$GLOBALS['TL_CSS'][] = 'system/modules/mediaelement/html/mediaelementplayer.css';
+		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/mediaelement-and-player.min.js';
+		$GLOBALS['TL_CSS'][] = 'system/modules/mediaelement/html/mediaelementplayer.min.css';
 		
 		$this->multiSRC = deserialize($this->multiSRC, true);
 		$this->arrFileTypes['poster'] = trimsplit(',', $GLOBALS['TL_CONFIG']['validImageTypes']);
