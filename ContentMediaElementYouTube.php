@@ -64,7 +64,7 @@ class ContentMediaElementYouTube extends ContentElement
 		$this->Template->type = 'video';
 		$this->Template->hasPoster = false;
 		$this->Template->hasFlash = false;
-		$this->Template->files = array(array('type'=>'video/youtube', 'src'=>'http://www.youtube.com/watch?v='.$this->mejs_youtube));
+		$this->Template->files = array(array('type'=>'video/x-youtube', 'src'=>'http://www.youtube.com/watch?v='.$this->mejs_youtube));
 		$this->Template->width = (int) $arrSize[0];
 		$this->Template->height = (int) $arrSize[1];
 		
