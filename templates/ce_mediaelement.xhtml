@@ -5,7 +5,7 @@
 <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
 <?php endif; ?>
 
-<video id="mejs<?php echo $this->id; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>"<?php if($this->hasPoster): ?> poster="<?php echo $this->poster; ?>"<?php endif; ?> controls="controls" preload="none">
+<<?php echo $this->type; ?> id="mejs<?php echo $this->id; ?>" width="<?php echo $this->width; ?>" height="<?php echo $this->height; ?>"<?php if($this->hasPoster): ?> poster="<?php echo $this->poster; ?>"<?php endif; ?> controls="controls" preload="none">
 <?php foreach( $this->files as $file ): ?>
     <source type="<?php echo $file['type']; ?>" src="<?php echo $file['src']; ?>" />
 <?php endforeach; ?>
