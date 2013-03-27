@@ -27,7 +27,7 @@
 </<?php echo $this->type; ?>>
 <script type="text/javascript">
 window.addEvent('domready', function() {
-    new MediaElementPlayer('mejs<?php echo $this->id; ?>', {pluginPath:'system/modules/mediaelement/html/'});
+    new MediaElementPlayer('#mejs<?php echo $this->id; ?>', {pluginPath:'system/modules/mediaelement/html/'});
 });
 </script>
 </div>

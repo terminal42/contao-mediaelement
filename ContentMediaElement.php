@@ -79,9 +79,25 @@ class ContentMediaElement extends ContentElement
 
 			return $objTemplate->parse();
 		}
+
+        //Load jQuery in no conflict mode if it's not already in use
+        $jQueryMissing = true;
+        foreach($GLOBALS['TL_JAVASCRIPT'] as $script) {
+            // Match typical jquery file pattern
+            if (preg_match("/jquery(-\d+\.\d+\.\d+)?(\.min)?\.js/i",$script) == 1) {
+                $jQueryMissing = false;
+                break;
+            }
+        }
+        if ($jQueryMissing) {
+            // Load jQuery
+            $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/jquery.js';
+            // Put it in no conflict more right after (important that this stays after jquery)
+            $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/jquery.noconflict.js';
+        }
 		
-		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/mediaelement-and-player.js';
-		$GLOBALS['TL_CSS'][] = 'system/modules/mediaelement/html/mediaelementplayer.css';
+		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/mediaelement-and-player.min.js';
+		$GLOBALS['TL_CSS'][] = 'system/modules/mediaelement/html/mediaelementplayer.min.css';
 		
 		$this->multiSRC = deserialize($this->multiSRC, true);
 		$this->arrFileTypes['poster'] = trimsplit(',', $GLOBALS['TL_CONFIG']['validImageTypes']);
