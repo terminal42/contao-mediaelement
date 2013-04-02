@@ -24,7 +24,7 @@
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 window.addEvent('domready', function() {
-    new MediaElementPlayer('#mejs<?php echo $this->id; ?>', {pluginPath:'system/modules/mediaelement/html/'});
+    new MediaElementPlayer((typeof jQuery!="undefined"?'#':'')+'mejs<?php echo $this->id; ?>', {pluginPath:'system/modules/mediaelement/html/'});
 });
 //--><!]]>
 </script>

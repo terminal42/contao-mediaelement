@@ -50,7 +50,7 @@ class ContentMediaElementYouTube extends ContentElement
 		}
 		
 		$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/mediaelement/html/mediaelement-and-player.js';
-		$GLOBALS['TL_CSS'][] = 'system/modules/mediaelement/html/mediaelementplayer.css';
+		$GLOBALS['TL_CSS'][] = 'system/modules/mediaelement/html/mediaelementplayer.min.css';
 		
 		return parent::generate();
 	}
